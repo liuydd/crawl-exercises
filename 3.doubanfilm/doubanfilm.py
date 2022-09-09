@@ -7,7 +7,7 @@ import csv
 
 def get_info(page):
     url="https://movie.douban.com/top250?start="+str(page*25)+"&filter="
-    response=requests.get(url,headers={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27"})
+    response=requests.get(url,headers={"User-Agent":" "})
     assert response.status_code==200
     return response.text
 
